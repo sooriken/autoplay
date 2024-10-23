@@ -27,6 +27,8 @@
 	setTimeout(() => {
 		for (let i = 0; i < element.length; i++) {
 			element[i].classList.add("interact-button");
+			element[i].classList.remove("chain");
+			element[i].classList.remove("button-main");
 			element[i].style.color = 'red';
 			console.log(element[i]);
 		}
