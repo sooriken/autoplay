@@ -23079,7 +23079,7 @@
                 }), []);
                 return (0, $p.jsxs)($p.Fragment, {
                     children: [e ? (0, $p.jsx)("span", {
-                        className: "button-mains chain",
+                        className: "button-main",
                         onClick: () => (async () => {
                             try {
                                 var t;
