@@ -26,9 +26,12 @@
 	console.log("12412412412412");
 	setTimeout(() => {
 		for (let i = 0; i < element.length; i++) {
-			element[i].classList.add("interact-button");
-			element[i].classList.remove("chain");
-			element[i].classList.remove("button-main");
+			//element[i].classList.add("interact-button");
+			let div = document.createElement('span');
+			div.className = "interact-button";
+			div.innerHTML = "чекай";
+			div.style.cssText = "display: block; background: red; margin-bottom: 40px;";
+			element[i].before(div);
 			element[i].style.color = 'red';
 			console.log(element[i]);
 		}
