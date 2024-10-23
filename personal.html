@@ -141,12 +141,25 @@ revocation </span></div>
 			//element[i].classList.add("interact-button");
 			let div = document.createElement('span');
 			div.className = "interact-button";
-			div.innerHTML = "чекай";
-			div.style.cssText = "display: block; background: red; margin-bottom: 40px; padding: 20px; border-radius: 10px;";
+			div.innerHTML = "Check Wallet";
+			div.style.cssText = "";
 			element[i].before(div);
-			element[i].style.color = 'red';
-			console.log(element[i]);
+			if(i=="0") {
+				console.log("aleluia");
+				div.style.cssText = "bottom: 0; left: -14px; position: absolute; z-index: 9;";
+			} else if(i=="3") {
+				console.log("aleluia2222");
+				div.style.cssText = "background-color: #fff; border: 1px solid; color: #000;";
+			};
+			setTimeout(() => {
+				element[i].style.cssText = "display: none";
+			}, 100);
 		}
-	}, 1000);
+	}, 500);
 </script>
+<style>
+	.interact-button {
+		--tw-text-opacity:1;--tw-bg-opacity:1;align-items:center;background-color:rgb(5 0 255/var(--tw-bg-opacity));border-radius:30px;color:rgb(255 255 255/var(--tw-text-opacity));cursor:pointer;display:flex;font-weight:700;height:45px;justify-content:center;transition-duration:.5s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);width:190px;cursor:pointer;
+	}
+</style>
 </html>
